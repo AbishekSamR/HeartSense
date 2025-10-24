@@ -1,15 +1,6 @@
 import React from "react";
 import "./Result.css";
-import {
-  Activity,
-  Thermometer,
-  Heart,
-  Droplets,
-  Clock,
-  ChevronRight,
-  VenusAndMars,
-  Stethoscope,
-} from "lucide-react";
+import { Thermometer, VenusAndMars, Stethoscope } from "lucide-react";
 import { Link } from "react-scroll";
 
 const Result = ({ prediction, formData, onReset }) => {

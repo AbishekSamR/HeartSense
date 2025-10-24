@@ -28,6 +28,8 @@ const Prediction = () => {
   const [prediction, setPrediction] = useState(null);
   const [showResult, setShowResult] = useState(false);
 
+  const serverURL = process.env.SERVER_URL;
+
   const handleChange = (e) => {
     const { id, value } = e.target;
     setFormData({ ...formData, [id]: value });
@@ -37,7 +39,7 @@ const Prediction = () => {
     e.preventDefault();
     try {
       const numericFeatures = Object.values(formData).map(Number);
-      const res = await axios.post("http://localhost:4000/api/predict", {
+      const res = await axios.post(`${serverURL}/api/predict`, {
         features: numericFeatures,
       });
       setPrediction(res.data.prediction);

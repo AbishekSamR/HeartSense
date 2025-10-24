@@ -11,9 +11,11 @@ app.get("/", (req, res) => {
   res.send("Server is running...");
 });
 
+const flaskURL = process.env.FLASK_URL;
+
 app.post("/api/predict", async (req, res) => {
   try {
-    const response = await axios.post("http://127.0.0.1:5000/api/predict", {
+    const response = await axios.post(`${flaskURL}/api/predict`, {
       features: req.body.features,
     });
     res.status(200).send(response.data);
