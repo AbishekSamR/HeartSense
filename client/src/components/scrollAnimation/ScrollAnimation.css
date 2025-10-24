@@ -1,0 +1,12 @@
+.scroll-animate {
+  transform: translateZ(-200px) scale(0.8); /* start far away and smaller */
+  opacity: 0;
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.8s ease;
+  will-change: transform, opacity;
+  perspective: 1000px;
+}
+
+.scroll-animate.visible {
+  transform: translateZ(0) scale(1); /* come to normal position */
+  opacity: 1;
+}

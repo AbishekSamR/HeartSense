@@ -1,0 +1,247 @@
+/* Aboutpage.css */
+
+/* About Page */
+.about-page {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f3f4f6;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #f8fff9;
+}
+
+/* Container */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.heart-icon-container {
+  display: inline-flex;
+  background: linear-gradient(
+    to bottom right,
+    #ef4444,
+    #ec4899
+  ); /* from-red-500 to-pink-600 */
+  padding: 0.75rem; /* p-3 */
+  border-radius: 9999px; /* rounded-full */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+/* For the HeartIcon */
+.heart-icon {
+  width: 3rem; /* w-12 */
+  height: 3rem; /* h-12 */
+  color: white; /* text-white */
+}
+
+/* Header */
+.about-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #253d2c;
+  margin-bottom: 1rem;
+}
+
+.about-description {
+  font-size: 1.25rem;
+  color: #4b5563;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+/* Process Section */
+.about-process {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.about-process-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #2e6f40;
+  margin-bottom: 2rem;
+}
+
+.about-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.about-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  text-align: center;
+}
+
+.about-step-icon {
+  background-color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.about-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.about-icon-blue {
+  color: #2563eb;
+}
+
+.about-icon-purple {
+  color: #7c3aed;
+}
+
+.about-icon-green {
+  color: #059669;
+}
+
+.about-step-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.about-step-description {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.about-step-arrow {
+  font-size: 1.5rem;
+  color: #9ca3af;
+  font-weight: bold;
+}
+
+/* Content Grid */
+.about-content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .about-content-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Features */
+.about-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .about-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Feature Item */
+.about-feature-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-feature-icon-bg-blue {
+  background-color: #dbeafe;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.about-feature-icon-bg-purple {
+  background-color: #ede9fe;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.about-feature-icon-bg-red {
+  background-color: #fee2e2;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.about-feature-icon-bg-green {
+  background-color: #d1fae5;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.about-feature-icon-bg-yellow {
+  background-color: #fef3c7;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.about-feature-icon-bg-indigo {
+  background-color: #e0e7ff;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.about-feature-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.about-feature-icon-blue {
+  color: #2563eb;
+}
+
+.about-feature-icon-purple {
+  color: #7c3aed;
+}
+
+.about-feature-icon-red {
+  color: #dc2626;
+}
+
+.about-feature-icon-green {
+  color: #059669;
+}
+
+.about-feature-icon-yellow {
+  color: #d97706;
+}
+
+.about-feature-icon-indigo {
+  color: #4338ca;
+}
+
+.about-feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.about-feature-description {
+  color: #4b5563;
+}

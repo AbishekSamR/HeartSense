@@ -1,0 +1,182 @@
+.result-page {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: auto;
+}
+
+.card h3 {
+  color: #253d2c;
+}
+
+.risk-level {
+  margin-bottom: 20px;
+}
+
+.risk-card h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.risk-card label > span {
+  color: #68ba7f;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.metric {
+  margin: 1.5rem 0;
+}
+
+.metrics-card > h3 {
+  margin-bottom: 10px;
+}
+
+.metric > label > span {
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(131, 162, 162);
+}
+
+.bar {
+  height: 8px;
+  border-radius: 5px;
+  background: #eee;
+  margin-top: 4px;
+}
+
+.bar.blue {
+  background-color: #3b82f6;
+}
+
+.bar.yellow {
+  background-color: #facc15;
+}
+
+.bar.orange {
+  background-color: #ffa442;
+}
+
+.badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.badge.low {
+  background-color: #22c55e;
+}
+
+.badge.high {
+  background-color: #ef4444;
+}
+
+.result-input-label {
+  color: #374151;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.result-input-label > span {
+  color: rgb(50, 118, 255);
+}
+
+.assesment {
+  display: flex;
+  flex-direction: column;
+}
+
+.result-icon-container {
+  display: flex;
+  align-items: center;
+  margin: 0.75rem 0;
+}
+
+.result-icon-bg-blue {
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.result-icon-bg-red {
+  border-radius: 0.5rem;
+  margin-right: 0.75rem;
+}
+
+.result-icon-bg-yellow {
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.result-icon-bg-orange {
+  border-radius: 0.5rem;
+  margin-right: 0.75rem;
+}
+
+.result-icon-bg-green {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-right: 0.75rem;
+}
+
+.prediction-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.icon-blue {
+  color: #2563eb;
+}
+
+.icon-red {
+  color: #dc2626;
+}
+
+.icon-yellow {
+  color: #d97706;
+}
+
+.icon-orange {
+  color: #ea580c;
+}
+
+.icon-green {
+  color: #059669;
+}
+
+.again-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem; /* optional spacing from cards */
+}
+
+.again-btn {
+  width: 150px;
+  background-color: #cfffdc;
+  color: #2e6f40;
+  padding: 0.75rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.again-btn:hover {
+  background-color: #78c98e;
+  color: #fff;
+}

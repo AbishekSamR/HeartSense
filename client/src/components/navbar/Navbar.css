@@ -1,0 +1,128 @@
+/* Navbar.css */
+
+/* Navbar */
+/* .navbar {
+  width: 100%;
+  height: 5vh;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  transition: all 0.3s;
+  background: linear-gradient(
+    to bottom right,
+    #ef4444,
+    #ec4899
+  ); /* from-red-500 to-pink-600 */
+
+/* padding: 0.75rem; 
+  border-radius: 9999px; 
+  margin-bottom: 1rem; 
+} */
+
+.navbar {
+  width: calc(100% - 10rem); /* account for side margins visually */
+  height: auto; /* let padding decide height */
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0; /* add small gap from top */
+  left: 50%;
+  transform: translateX(-50%); /* center it horizontally */
+
+  z-index: 50;
+  transition: all 0.3s ease;
+
+  /* background: linear-gradient(to bottom right, #ef4444, #ec4899); */
+  border-radius: 9999px;
+  background-color: #2e6f40;
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); */
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+  color: #ff6b6b;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #cfffdc;
+}
+
+/* Menu */
+.menu {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
+}
+
+/* Menu Button */
+.menu-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 15px;
+  width: 80px;
+  height: 30px;
+  font-size: 20px;
+  color: #cfffdc;
+  text-transform: capitalize;
+  transition: color 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  color: #68ba7f;
+}
+
+.menu-button.active {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Login Button */
+.login-button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.login-button:hover {
+  background-color: #2563eb;
+}
