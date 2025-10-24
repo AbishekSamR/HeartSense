@@ -1,6 +1,6 @@
 import React from "react";
 import { BrainCircuit, HeartPulse, ChevronRight } from "lucide-react";
-import "./HomePage.css";
+import "./Homepage.css";
 import { Link } from "react-scroll";
 
 const HomePage = () => {

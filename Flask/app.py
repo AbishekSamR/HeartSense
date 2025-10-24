@@ -1,11 +1,18 @@
 from flask import Flask , request , jsonify
 import joblib
 import numpy as np
+import warnings
+
+warnings.filterwarnings("ignore")
 
 app = Flask(__name__)
 
 model = joblib.load('heart_model.joblib')
 scaler = joblib.load("scaler.joblib")
+
+@app.route('/',methods=["GET"])
+def main():
+    return "Server is running..."
 
 
 @app.route("/api/predict",methods=["POST"])
