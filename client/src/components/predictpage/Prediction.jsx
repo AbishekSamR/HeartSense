@@ -234,11 +234,6 @@ const Prediction = () => {
             <button
               type="submit"
               className="predict-button"
-              onClick={() => {
-                document
-                  .getElementById("result")
-                  .scrollIntoView({ behavior: "smooth" });
-              }}
             >
               Predict Now
               <ChevronRight className="chevron" />
