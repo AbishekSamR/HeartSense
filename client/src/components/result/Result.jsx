@@ -1,6 +1,6 @@
 import React from "react";
 import "./Result.css";
-import { Thermometer, VenusAndMars, Stethoscope } from "lucide-react";
+import { Thermometer, VenusAndMars, Stethoscope,Clock } from "lucide-react";
 import { Link } from "react-scroll";
 
 const Result = ({ prediction, formData, onReset }) => {
