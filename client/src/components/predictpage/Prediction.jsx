@@ -28,7 +28,7 @@ const Prediction = () => {
   const [prediction, setPrediction] = useState(null);
   const [showResult, setShowResult] = useState(false);
 
-  const serverURL = import.meta.env.SERVER_URL;
+  const serverURL = import.meta.env.VITE_SERVER_URL;
 
   const handleChange = (e) => {
     const { id, value } = e.target;
